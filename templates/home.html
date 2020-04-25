@@ -9,7 +9,8 @@
 
 <style>
 body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+.mySlides {display: none; padding-top: none;}
+
 </style>
 <body>
 
@@ -27,9 +28,9 @@ body {font-family: "Lato", sans-serif}
     <a href="javascript:void(0)" class="padding-large hover-red hide-small right"><i class="fa fa-search"></i></a>
   </div> 
 </div>
-<p class="content-section">
-  <a href="https://www.ieee.org/" target="_blank"> Join IEEE Now!!!</a>
-</p>
+<h2>
+  <a href="https://www.ieee.org/" target="_blank" class="centre"> Join IEEE Now!!!</a>
+</h2>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
@@ -41,56 +42,45 @@ body {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Page content -->
-<div class="content" style="max-width:2000px;margin-top:46px">
+<div class="content" style="max-width:1875px;margin-top:none">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides display-container center">
-    <img src="/static/arduino1.jpeg" style="width:100%">
+  <div class="mySlides center">
+    <img src="/static/bg1.jpg" width="1840" height="500">
     <div class="display-bottommiddle container text-white padding-32 hide-small">
       <h3><b><i>"Hardware becomes a piece of culture that anyone can build upon."</b> - Massimo Banzi </i></h3>
     </div>
   </div>
   <div class="mySlides display-container center">
-    <img src="/static/iot1.jpeg" style="width:100%">
+    <img src="/static/bg2.jpg" width="1840" height="500">
     <div class="display-bottommiddle container text-white padding-32 hide-small">
       <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems</i></h3>
     </div>
   </div>
   <div class="mySlides display-container center">
-    <img src="/static/raspberry3.jpeg" style="width:100%">
+    <img src="/static/bg3.jpg" width="1840" height="500">
     <div class="display-bottommiddle container text-white padding-32 hide-small">
       <h3><i><b>“The truth is, homes change over time — and technology has to adapt, not try to do everything at once.”</b> — Tony Fadell, Founder & CEO, Nest Labs</i></h3>  
     </div>
   </div>
   <div class="mySlides display-container center">
-    <img src="/static/arduino2.jpeg" style="width:100%">
+    <img src="/static/bg4.jpg" width="1840" height="500">
     <div class="display-bottommiddle container text-white padding-32 hide-small">
       <h3><b><i>"Hardware becomes a piece of culture that anyone can build upon."</b> - Massimo Banzi </i></h3>
     </div>
   </div>
   <div class="mySlides display-container center">
-    <img src="/static/raspberry1.jpeg" style="width:100%">
+    <img src="/static/bg5.jpg" width="1840" height="500">
     <div class="display-bottommiddle container text-white padding-32 hide-small">
       <h3><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems </i></h3>
     </div>
   </div>
-  <div class="mySlides display-container center">
-    <img src="/static/raspberry2.jpeg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><b><i>“The truth is, homes change over time — and technology has to adapt, not try to do everything at once.”</b> — Tony Fadell, Founder & CEO, Nest Labs</i></h3>
-    </div>
-  </div>
-  <div class="mySlides display-container center">
-    <img src="/static/raspberry4.png" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems </i></h3>
-    </div>
-  </div>
+  
 
   
 
   <!-- The Band Section (EVENTS)-->
-  <div class="container content center padding-64" style="max-width:800px" id="events">
+  <div class="container display-container content center padding-64" style="max-width:800px" id="events">
     <h2 class="wide">EVENTS</h2>
     <p class="opacity"><i>We love music</i></p>
     <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -114,7 +104,7 @@ body {font-family: "Lato", sans-serif}
 
   <!-- The Tour Section (GALLERY)-->
   <div class="black" id="gallery">
-    <div class="container content padding-64" style="max-width:800px">
+    <div class="container display-container content padding-64" style="max-width:800px">
       <h2 class="wide center">GALLERY</h2>
       <p class="opacity center"><i>Remember to book your tickets!</i></p><br>
 
@@ -156,28 +146,10 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="modal">
-    <div class="modal-content animate-top card-4">
-      <header class="container teal center padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="button teal xlarge display-topright">×</span>
-        <h2 class="wide"><i class="fa fa-suitcase margin-right"></i>Tickets</h2>
-      </header>
-      <div class="container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="input border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="input border" type="text" placeholder="Enter email">
-        <button class="button block teal padding-16 section right">PAY <i class="fa fa-check"></i></button>
-        <button class="button red section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="right">Need <a href="#" class="text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
+  
 
   <!-- ABOUT US-->
-  <div class="container content center padding-64" style="max-width:800px" id="aboutus">
+  <div class="container content display-container center padding-64" style="max-width:800px" id="aboutus">
     <h2 class="wide">ABOUT US</h2>
     <p class="opacity"><i>We love music</i></p>
     <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -228,10 +200,6 @@ body {font-family: "Lato", sans-serif}
   
 <!-- End Page Content -->
 </div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="image greyscale-min" style="width:100%">
-
 <!-- Footer -->
 <footer class="container padding-64 center opacity light-grey xlarge">
   <i class="fa fa-facebook-official hover-opacity"></i>
