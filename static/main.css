@@ -1359,3 +1359,14 @@ html{
 .border-pale-blue,.hover-border-pale-blue:hover{
     border-color:#e7ffff!important
 }
+
+
+.content-section {
+    background:none;
+    padding: 10px 20px;
+    padding-left:60mm;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 20px;
+        
+  }
