@@ -1363,7 +1363,7 @@ html{
 
 .content-section {
     background:red;
-    padding-block: 5mm ;
+    padding:5mm ;
     padding-left:20mm;
     border:black;
     border-radius: 3px;
