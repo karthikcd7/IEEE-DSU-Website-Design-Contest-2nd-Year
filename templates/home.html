@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-
+<link rel="stylesheet" type="text/css" href="../../IEEE Website/static/main.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
@@ -17,80 +17,81 @@ body {font-family: "Lato", sans-serif}
 <div class="top">
   <div class="bar black card">
     <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#contact" class="bar-item button padding-large hide-small right">CONTACT US</a>
-     <a href="#execom" class="bar-item button padding-large hide-small right">EXE COM</a>
-    <a href="#gallery" class="bar-item button padding-large hide-small right">GALLERY</a>
-    <a href="#events" class="bar-item button padding-large hide-small right">EVENTS</a>
-    <a href="#aboutus" class="bar-item button padding-large right ">HOME</a>
-    
-    <a href="/"> <img src="/static/ieee.png" style="height: 90px;"> </a>
-    <a href="javascript:void(0)" class="padding-large hover-red hide-small right"><i class="fa fa-search"></i></a>
-  </div> 
+    <a href="#contact" class="bar-item button padding-large hide-small right" style="margin-top: 25px ">CONTACT US</a>
+    <a href="#" class="bar-item button padding-large hide-small right" style="margin-top: 25px">EXE COM</a>
+    <a href="#tour" class="bar-item button padding-large hide-small right" style="margin-top: 25px">GALLERY</a>
+    <a href="#band" class="bar-item button padding-large hide-small right" style="margin-top: 25px">EVENTS</a>
+    <a href="#" class="bar-item button padding-large right " style="margin-top: 25px">HOME</a>
+    <a href="https://www.ieee.org/" class="bar-item button padding-large hover-red hide-small right" style="margin-top: 25px" >JOIN IEEE</a>
+
+    <img src="/static/ieee.png" style="height: 100px;">
+    <a href="javascript:void(0)" class="padding-large hover-red hide-small right" style="margin-top: 25px"><i class="fa fa-search" ></i></a>
+  </div>
 </div>
-<p class="content-section">
-  <a href="https://www.ieee.org/" target="_blank"> Join IEEE Now!!!</a>
-</p>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
-  <a href="#events" class="bar-item button padding-large" onclick="myFunction()">EVENTS</a>
-  <a href="#execom" class="bar-item button padding-large" onclick="myFunction()">EXE COM</a>
-  <a href="#gallery" class="bar-item button padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="#band" class="bar-item button padding-large" onclick="myFunction()">EVENTS</a>
+  <a href="#tour" class="bar-item button padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="#" class="bar-item button padding-large" onclick="myFunction()">EXE COM</a>
   <a href="#contact" class="bar-item button padding-large" onclick="myFunction()">CONTACT US</a>
-  <a href="#aboutus" class="bar-item button padding-large" onclick="myFunction()">HOME</a>
+  <a href="#" class="bar-item button padding-large" onclick="myFunction()">MERCH</a>
 </div>
 
 <!-- Page content -->
 <div class="content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides display-container center">
-    <img src="/static/arduino1.jpeg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><b><i>"Hardware becomes a piece of culture that anyone can build upon."</b> - Massimo Banzi </i></h3>
+  <!-- Automatic Slideshow Images  -->
+  <div class="mySlides  center">
+    <img src="/static/raspberry4.png" style="width: 100%">
+   
+    <div class="display-bottommiddle container center text-white padding-32 hide-small" style="background: white; opacity: 80%;">
+      <h3 style="color: black; margin-top: 2px; margin-bottom: 2px; opacity: 200%;"><b><i>"Hardware becomes a piece of culture that anyone can build upon."</b> - Massimo Banzi </i></h3>
     </div>
   </div>
-  <div class="mySlides display-container center">
-    <img src="/static/iot1.jpeg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif;"><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems</i></h3>
-    </div>
-  </div>
-  <div class="mySlides display-container center">
-    <img src="/static/raspberry3.jpeg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><i><b>“The truth is, homes change over time — and technology has to adapt, not try to do everything at once.”</b> — Tony Fadell, Founder & CEO, Nest Labs</i></h3>  
-    </div>
-  </div>
-  <div class="mySlides display-container center">
-    <img src="/static/arduino2.jpeg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><b><i>"Hardware becomes a piece of culture that anyone can build upon."</b> - Massimo Banzi </i></h3>
-    </div>
-  </div>
-  <div class="mySlides display-container center">
-    <img src="/static/raspberry1.jpeg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems </i></h3>
-    </div>
-  </div>
-  <div class="mySlides display-container center">
-    <img src="/static/raspberry2.jpeg" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><b><i>“The truth is, homes change over time — and technology has to adapt, not try to do everything at once.”</b> — Tony Fadell, Founder & CEO, Nest Labs</i></h3>
-    </div>
-  </div>
-  <div class="mySlides display-container center">
-    <img src="/static/raspberry4.png" style="width:100%">
-    <div class="display-bottommiddle container text-white padding-32 hide-small">
-      <h3><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems </i></h3>
-    </div>
-  </div>
-
+  <div class="mySlides center">
+    <img src="/static/iot_new.jpg" style="width: 100%; ">
   
+    <div class="display-bottommiddle container text-white padding-32 hide-small" style="background: white; opacity: 80%;">
+      <h3 style="color: black;"><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems</i></h3>
+    </div>
+  </div>
+  <div class="mySlides  center">
+    <img src="/static/raspberry.jpg" style="width:100%;;">
+   
+    <div class="display-bottommiddle container text-white padding-32 hide-small" style="background: white; opacity: 80%;">
+      <h3 style="color: black;"><i><b>“The truth is, homes change over time — and technology has to adapt, not try to do everything at once.”</b> — Tony Fadell, Founder & CEO, Nest Labs</i></h3>  
+    </div>
+  </div>
+  <div class="mySlides  center">
+    <img src="/static/circuit.jpg" style="width:100%; ">
+   
+    <div class="display-bottommiddle container text-white padding-32 hide-small" style="background: white; opacity: 80%";>
+      <h3 style="color: black;"><b><i>"Hardware becomes a piece of culture that anyone can build upon."</b> - Massimo Banzi </i></h3>
+    </div>
+  </div>
+  <div class="mySlides  center">
+    <img src="/static/arduino.jpg" style="width:100%; ">
+   
+    <div class="display-bottommiddle container text-white padding-32 hide-small" style="background: white; opacity: 80%;">
+      <h3 style="color: black;"><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems </i></h3>
+    </div>
+  </div>
+  <div class="mySlides  center">
+    <img src="/static/circuit.jpg" style="width:100%;">
+    <div class="display-bottommiddle container text-white padding-32 hide-small" style="background: white; opacity: 80%;">
+      <h3 style="color: black;"><b><i>“The truth is, homes change over time — and technology has to adapt, not try to do everything at once.”</b> — Tony Fadell, Founder & CEO, Nest Labs</i></h3>
+    </div>
+  </div>
+  <div class="mySlides  center">
+    <img src="/static/arduino.jpg" style="width: 100%;">
+    <div class="display-bottommiddle container text-white padding-32 hide-small" style="background: white; opacity: 80%;">
+      <h3 style="color: black;"><b><i>“The IoT is big news because it ups the ante: ‘Reach out and touch somebody’ is becoming ‘reach out and touch everything’.”</b> — Parker Trewin, Senior Director of Content and Communications, Aria Systems </i></h3>
+    </div>
+  </div>    
 
   <!-- The Band Section (EVENTS)-->
-  <div class="container content center padding-64" style="max-width:800px" id="events">
+  <div class="container content center padding-64" style="max-width:800px" id="band">
     <h2 class="wide">EVENTS</h2>
     <p class="opacity"><i>We love music</i></p>
     <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -113,7 +114,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- The Tour Section (GALLERY)-->
-  <div class="black" id="gallery">
+  <div class="black" id="tour">
     <div class="container content padding-64" style="max-width:800px">
       <h2 class="wide center">GALLERY</h2>
       <p class="opacity center"><i>Remember to book your tickets!</i></p><br>
@@ -176,37 +177,14 @@ body {font-family: "Lato", sans-serif}
     </div>
   </div>
 
-  <!-- ABOUT US-->
-  <div class="container content center padding-64" style="max-width:800px" id="aboutus">
-    <h2 class="wide">ABOUT US</h2>
-    <p class="opacity"><i>We love music</i></p>
-    <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="row padding-32">
-      <div class="third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="round margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
   <!-- The Contact Section -->
   <div class="container content padding-64" style="max-width:800px" id="contact">
     <h2 class="wide center">CONTACT</h2>
     <p class="opacity center"><i>Fan? Drop a note!</i></p>
     <div class="row padding-32">
       <div class="col m6 large margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Bangalore,Karnataka,India<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 0123456789<br>
+        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
         <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
       </div>
       <div class="col m6">
@@ -236,8 +214,11 @@ body {font-family: "Lato", sans-serif}
 <footer class="container padding-64 center opacity light-grey xlarge">
   <i class="fa fa-facebook-official hover-opacity"></i>
   <i class="fa fa-instagram hover-opacity"></i>
+  <i class="fa fa-snapchat hover-opacity"></i>
+  <i class="fa fa-pinterest-p hover-opacity"></i>
+  <i class="fa fa-twitter hover-opacity"></i>
   <i class="fa fa-linkedin hover-opacity"></i>
-  
+  <p class="medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
 <script>
