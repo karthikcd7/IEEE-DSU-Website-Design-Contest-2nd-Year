@@ -1054,6 +1054,10 @@ html{
     padding-top:64px!important;
     padding-bottom:64px!important
 }
+ .padding-80{
+    padding-top:80px!important;
+    padding-bottom:80px!important
+}
  .left{
     float:left!important
 }
@@ -1142,6 +1146,11 @@ html{
  .red,.hover-red:hover{
     color:#fff!important;
     background-color:#f44336!important
+}
+ .dark-red{
+    color:#fff!important;
+    background-color:#000000!important
+
 }
  .sand,.hover-sand:hover{
     color:#000!important;
