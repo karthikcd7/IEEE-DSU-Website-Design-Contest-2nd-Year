@@ -11,5 +11,9 @@ def home():
 def gallery():
     return render_template("gallery.html")
 
+@app.route("/events-onclick-readmore")
+def events():
+    return render_template("events.html")
+
 if __name__=='__main__':
 	app.run(debug=True)
