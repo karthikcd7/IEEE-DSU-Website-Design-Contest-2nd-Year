@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/gallery-onclick-showmore")
+@app.route("/gallery")
 def gallery():
     return render_template("gallery.html")
 
