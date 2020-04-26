@@ -431,9 +431,16 @@ html{
      overflow-x:auto 
 }
  .container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before, .cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after{
-     content:"";
+    content:"";
     display:table;
     clear:both 
+}
+.box {
+    display: table;
+    content: "";
+    clear: both;
+    padding: 0.15em 50px
+    
 }
  .col,.half,.third,.twothird,.threequarter,.quarter{
      float:left;
