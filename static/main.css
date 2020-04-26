@@ -1384,7 +1384,8 @@ html{
     border:black;
     border-radius: 3px;
     margin-bottom: 20px;
-    shape-outside: margin-box;
-
-        
+    shape-outside: margin-box;     
   }
+.padding-left{
+    padding-left:5mm ;
+}

@@ -15,5 +15,9 @@ def gallery():
 def events():
     return render_template("events.html")
 
+@app.route("/execom")
+def execom():
+    return render_template("execom.html")
+
 if __name__=='__main__':
 	app.run(debug=True)
