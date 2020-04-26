@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>IEEE</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none; padding-top: none;}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar black card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="\home#contact" class="bar-item button padding-large hide-small right" style="margin-top:25px">CONTACT US</a>
+    <a href="\home#execom" class="bar-item button padding-large hide-small right" style="margin-top:25px">EXE COM</a>
+    <a href="\home#gallery" class="bar-item button padding-large hide-small right" style="margin-top:25px">GALLERY</a>
+    <a href="\home#events" class="bar-item button padding-large hide-small right" style="margin-top:25px">EVENTS</a>
+    <a href="\home" class="bar-item button padding-large right " style="margin-top:25px">HOME</a>
+    <a href="https://www.ieee.org/" target="_blank" class="bar-item button padding-large red hide-small right" style="margin-top:25px" ><b>JOIN  IEEE!</b></a>
+    <a href="/"> <img src="/static/logo.jpg" style="height: 90px;"> </a>
+    <a href="javascript:void(0)" class="bar-item button padding-large hide-small right"><b class="fa fa-search" style="margin-top:30px"></b></a>
+  </div> 
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+  <a href="\home#events" class="bar-item button padding-large" onclick="myFunction()">EVENTS</a>
+  <a href="\home#gallery" class="bar-item button padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="\home#execom" class="bar-item button padding-large" onclick="myFunction()">EXE COM</a>
+  <a href="\home#contact" class="bar-item button padding-large" onclick="myFunction()">CONTACT US</a>
+  <a href="\home" class="bar-item button padding-large" onclick="myFunction()">HOME</a>
+</div>
+
+{% block content %}
+{% endblock %}
+</body>
+
+<!-- Footer -->
+<footer class="container padding-64 center opacity light-grey xlarge">
+    <i class="fa fa-facebook-official hover-opacity"></i>
+    <i class="fa fa-instagram hover-opacity"></i>
+    <i class="fa fa-linkedin hover-opacity"></i>
+  </footer>
+  <footer class="container center opacity light-grey">
+      <a href="https://www.ieee.org/" target="_blank" class=" button padding-large center black large " style="margin-top:25px" >JOIN  IEEE!</a>
+  </footer>
+</html>
