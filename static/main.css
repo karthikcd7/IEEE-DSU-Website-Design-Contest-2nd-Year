@@ -417,7 +417,8 @@ html{
      border:none;
      white-space:normal;
      float:none;
-     outline:0 
+     outline:0;
+     padding-top:10mm; 
 }
  .bar-block.center .bar-item{
      text-align:center 
@@ -1391,4 +1392,7 @@ html{
 }
 .padding-right{
     padding-right:7mm ;
+}
+.padding-top{
+    padding-top: 5mm;
 }

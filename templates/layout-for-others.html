@@ -19,12 +19,12 @@ body {font-family: "Lato", sans-serif}
   <div class="bar black card">
     <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <div class="dropdown-hover hide-small right" style="margin-top: 25px;">
-      <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>
       <div class="dropdown-content  bar-block card-4" style="right:0">
         <a href="https://github.com/IEEE" target="_blank" class="bar-item button padding-large hide-small ">PROJECTS</a>
         <a href="\achievements" class="bar-item button padding-large hide-small ">ACHIEVEMENTS</a>
         <a href="\home#contact" class="bar-item button padding-large hide-small ">CONTACT US</a>
-      
+
       </div>
     </div>
     <a href="\execom" class="bar-item button padding-large hide-small right" style="margin-top:25px">EXE COM</a>
@@ -34,48 +34,34 @@ body {font-family: "Lato", sans-serif}
     <a href="https://www.ieee.org/" target="_blank" class="bar-item button padding-large red hide-small right" style="margin-top:25px" ><b>JOIN  IEEE!</b></a>
     <a class="padding-left" href="/home"> <img src="/static/logo.jpg" style="height: 90px;"> </a>
     <a href="javascript:void(0)" class="bar-item button padding-large hide-small right"><b class="fa fa-search" style="margin-top:30px"></b></a>
-  </div> 
+  </div>
 </div>
 
 <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
   <a href="\home#events" class="bar-item button padding-large" onclick="myFunction()">EVENTS</a>
   <a href="\home#gallery" class="bar-item button padding-large" onclick="myFunction()">GALLERY</a>
+  <a href="https://github.com/IEEE" target="_blank" class="bar-item button padding-large" onclick="myFunction()">PROJECTS</a>
+  <a href="\achievements" class="bar-item button padding-large" onclick="myFunction()">ACHIEVEMENTS</a>
   <a href="\execom" class="bar-item button padding-large" onclick="myFunction()">EXE COM</a>
   <a href="\home#contact" class="bar-item button padding-large" onclick="myFunction()">CONTACT US</a>
-  <a href="\home" class="bar-item button padding-large" onclick="myFunction()">HOME</a>
 </div>
 
 {% block content %}
 {% endblock %}
 
 <script>
-  // Automatic Slideshow - change image every 4 seconds
-  var myIndex = 0;
-  carousel();
-  
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
-  }
-  
+
   // Used to toggle the menu on small screens when clicking on the menu button
   function myFunction() {
     var x = document.getElementById("navDemo");
     if (x.className.indexOf("show") == -1) {
       x.className += " show";
-    } else { 
+    } else {
       x.className = x.className.replace(" show", "");
     }
   }
-  
+
   </script>
 
 </body>
