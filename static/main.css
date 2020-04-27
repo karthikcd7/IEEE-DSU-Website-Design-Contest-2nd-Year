@@ -739,7 +739,7 @@ html{
     -ms-transform:translate(-50%,0%)
 }
  .display-bottommiddle{
-    position:absolute;
+    position: absolute;;
     left:50%;
     bottom:0;
     transform:translate(-50%,0%);
@@ -1395,4 +1395,7 @@ html{
 }
 .padding-top{
     padding-top: 5mm;
+}
+.font-size-vw {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
