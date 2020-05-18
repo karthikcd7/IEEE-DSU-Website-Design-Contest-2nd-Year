@@ -1484,3 +1484,16 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.front {
+    position:absolute;
+    
+}
+.back {
+    position:absolute;
+
+}
+.wrapper{
+    min-height: 500px;
+    
+}
