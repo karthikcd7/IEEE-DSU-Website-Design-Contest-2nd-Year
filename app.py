@@ -20,4 +20,4 @@ def execom():
     return render_template("execom.html")
 
 if __name__=='__main__':
-	app.run()
+	app.run(debug=True)
