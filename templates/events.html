@@ -3,48 +3,26 @@
 <html>
     
     <body>
-        <div class="container display-container content center padding-80" style="max-width:900px" id="events">
-            <h2 class="wide">EVENTS</h2>
-            <p class="opacity"><i>IEEE bringing you the latest in Technology News</i></p>
-            <p class="justify">The IEEE newsroom features the latest news from IEEE around the world.<br>
-              Find recent and past news related to IEEE hot topics, technical experts, products, awards, services, and events.</p>
-            <p class="left"><i>Recent News:</i></p>
-            <div>
-              <div class="row padding-16">
-                <p class="left">7 April 2020</p><br>
-                <p class="container justify">IEEE Provides Free Access to COVID-19 Relevant Research Articles and Standards in IEEE 
-                  Xplore® Digital Library.<br>IEEE, the world’s largest technical professional organization advancing technology for 
-                  humanity, is committed to supporting the global response to COVID-19. The organization is providing free, direct
-                  access to a collection of various COVID-19 related research articles and standards to help researchers understand, 
-                  manage and combat the different aspects of the pandemic.</p>
-              </div>
-              <div class="row padding-16">
-                <p class="left">16 March 2020</p><br>
-                <p class="container justify">Message from IEEE on coronavirus COVID-19
-                  As you are aware, last week the World Health Organization officially declared the novel coronavirus COVID-19 a 
-                  pandemic. This global health crisis is a unique challenge that has impacted many members of the IEEE family.
-                  We would like to express our concern and support for all the members of the IEEE community, our staff, our 
-                  families, and all others affected by this outbreak.</p>
-              </div>
-              <div class="row padding-16">
-                <p class="left">25 February 2020</p><br>
-                <p class="container justify">IEEE Future Networks Releases the International Network Generations Roadmap, 
-                  Helping Developers Identify and Overcome Challenges of 5G and Future Network Deployment<br>
-                  IEEE, the world's largest technical professional organization dedicated to advancing technology for 
-                  humanity, and the IEEE Future Networks Initiative today announced the release of the IEEE International 
-                  Network Generations Roadmap (INGR), First Edition.</p>
-              </div>
-              <div class="row padding-16">
-                <p class="left">29 January 2020</p><br>
-                <p class="container justify">IEEE Introduces TechRxiv™, a New Preprint Server for Unpublished Research<br>
-                  IEEE, the world's largest technical professional organization dedicated to advancing technology for 
-                  humanity, announces the launch of TechRxiv.org, a preprint server for the global technology community.</p>
-              </div>
-            </div>
-          </div>
-        <div class="container padding- center">
-            <button class="button black section" type="submit" ><a href="/" style="text-decoration: none;">BACK TO HOME</a></button>
+      <div class="container content padding-80" style="max-width:1000px" id="events">
+        <h2 class="wide center">EVENTS</h2>
+        <p class="opacity center"><i>IEEE bringing you the latest in Technology News</i></p>
+        <div class="tab">
+          <button class="tablinks tabbutton " onclick="openStatus(event, 'Upcoming')" id="defaultOpen">Upcoming Events</button>
+          <button class="tablinks tabbutton " onclick="openStatus(event, 'Past')">Past Events</button>
         </div>
+        
+        <div id="Upcoming" class="tabcontent">
+          <h3>--Upcoming Events</h3>
+          
+        </div>
+        
+        <div id="Past" class="tabcontent">
+          <h3>--Past Events</h3>
+          
+        </div>
+      </div>
+      
+  
     </body>
 
 </html>
@@ -52,3 +30,8 @@
 
 
 {% endblock %}
+
+
+<div class="container padding- center">
+  <button class="button black section" type="submit" ><a href="/" style="text-decoration: none;">BACK TO HOME</a></button>
+</div>
