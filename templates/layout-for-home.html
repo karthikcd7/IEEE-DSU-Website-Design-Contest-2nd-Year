@@ -86,36 +86,8 @@ body {font-family: "Lato", sans-serif}
 
   </script>
 
-  <!--Slides in Achievements-->
-  <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("Slides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--Scroll animation when clicked on button in nav bar --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
@@ -141,27 +113,197 @@ body {font-family: "Lato", sans-serif}
         } // End if
       });
     });
+  </script>
+  
+  <!--Home slideshow-->
+  <script>
+    var HslideIndex = 1;
+    var Hmillis = 3000;
+    var Hinterval;
+    
+    HstartSlides();
+    
+    function HstartSlides(){
+      HpauseSlides();
+      HnextSlide();
+      Hinterval = setInterval(HnextSlide, Hmillis);
+    }
 
+    function HresumeSlides() {
+      clearInterval(Hinterval);
+      Hinterval= setInterval(function(){
+        HplusSlides(HslideIndex)},Hmillis-1000);
+    }
 
-    // Gallery Slideshow Functions
-    var slideGIndex = 0;
-    showGSlides();
+    function HpauseSlides() {
+      clearInterval(Hinterval);
+    }
 
-    function showGSlides() {
+    function HnextSlide() {
+      HshowSlide();
+      HslideIndex++;
+    }
+
+    function HplusSlides(n) {
+      clearInterval(Hinterval);
+      HslideIndex += n;
+      HnextSlide();
+      Hinterval = setInterval(HnextSlide, Hmillis);
+    }
+
+    function HcurrentSlide(n) {
+      clearInterval(Hinterval);
+      HslideIndex = n + 1;
+      HnextSlide();
+      Hinterval = setInterval(HnextSlide, Hmillis);
+    }
+
+    function HshowSlide() {
       var i;
-      var slides = document.getElementsByClassName("gallerySlides");
-      var dots = document.getElementsByClassName("dot");
+      var slides = document.getElementsByClassName("HomeSlides");
+      var dots = document.getElementsByClassName("Hdot");
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-      slideGIndex++;
-      if (slideGIndex > slides.length) {slideGIndex = 1}
+      if (HslideIndex > slides.length) {
+        HslideIndex = 1;
+      }
+      if (HslideIndex < 1) {
+        HslideIndex = slides.length;
+      }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideGIndex-1].style.display = "block";
-      dots[slideGIndex-1].className += " active";
-      setTimeout(showGSlides, 3000); // Change image every 3 seconds
+      slides[HslideIndex - 1].style.display = "block";
+      dots[HslideIndex - 1].className += " active";
+    }
+  </script>
+
+  <!--Gallery slideshow-->
+  <script>
+    var GslideIndex = 1;
+    var Gmillis = 2000;
+    var Ginterval;
+    
+    GstartSlides();
+    
+    function GstartSlides(){
+      GpauseSlides();
+      GnextSlide();
+      Ginterval = setInterval(GnextSlide, Gmillis);
+    }
+
+    function GresumeSlides() {
+      clearInterval(Ginterval);
+      Ginterval= setInterval(function(){
+        GplusSlides(GslideIndex)},Gmillis-1000);
+    }
+
+    function GpauseSlides() {
+      clearInterval(Ginterval);
+    }
+
+    function GnextSlide() {
+      GshowSlide();
+      GslideIndex++;
+    }
+
+    function GplusSlides(n) {
+      clearInterval(Ginterval);
+      GslideIndex += n;
+      GnextSlide();
+      Ginterval = setInterval(GnextSlide, Gmillis);
+    }
+
+    function GcurrentSlide(n) {
+      clearInterval(Ginterval);
+      GslideIndex = n + 1;
+      GnextSlide();
+      Ginterval = setInterval(GnextSlide, Gmillis);
+    }
+
+    function GshowSlide() {
+      var i;
+      var slides = document.getElementsByClassName("GallerySlides");
+      var dots = document.getElementsByClassName("Gdot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      if (GslideIndex > slides.length) {
+        GslideIndex = 1;
+      }
+      if (GslideIndex < 1) {
+        GslideIndex = slides.length;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[GslideIndex - 1].style.display = "block";
+      dots[GslideIndex - 1].className += " active";
+    }
+  </script>
+
+  <!--Achievements slideshow-->
+  <script>
+    var AslideIndex = 1;
+    var Amillis = 4000;
+    var Ainterval;
+    
+    AstartSlides();
+    
+    function AstartSlides(){
+      ApauseSlides();
+      AnextSlide();
+      Ainterval = setInterval(AnextSlide, Amillis);
+    }
+
+    function AresumeSlides() {
+      clearInterval(Ainterval);
+      Ainterval= setInterval(function(){
+        AplusSlides(AslideIndex)},Amillis-1000);
+    }
+
+    function ApauseSlides() {
+      clearInterval(Ainterval);
+    }
+
+    function AnextSlide() {
+      AshowSlide();
+      AslideIndex++;
+    }
+
+    function AplusSlides(n) {
+      clearInterval(Ainterval);
+      AslideIndex += n;
+      AnextSlide();
+      Ainterval = setInterval(AnextSlide, Amillis);
+    }
+
+    function AcurrentSlide(n) {
+      clearInterval(Ainterval);
+      AslideIndex = n + 1;
+      AnextSlide();
+      Ainterval = setInterval(AnextSlide, Amillis);
+    }
+
+    function AshowSlide() {
+      var i;
+      var slides = document.getElementsByClassName("AchievementSlides");
+      var dots = document.getElementsByClassName("Adot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      if (AslideIndex > slides.length) {
+        AslideIndex = 1;
+      }
+      if (AslideIndex < 1) {
+        AslideIndex = slides.length;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[AslideIndex - 1].style.display = "block";
+      dots[AslideIndex - 1].className += " active";
     }
   </script>
 
