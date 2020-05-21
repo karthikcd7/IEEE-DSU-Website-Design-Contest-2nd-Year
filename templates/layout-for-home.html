@@ -10,6 +10,7 @@
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none; padding-top: none;}
+.gallerySlides {display: none;}
 
 </style>
 <body>
@@ -89,32 +90,32 @@ body {font-family: "Lato", sans-serif}
   <script>
     var slideIndex = 1;
     showSlides(slideIndex);
-    
+
     function plusSlides(n) {
       showSlides(slideIndex += n);
     }
-    
+
     function currentSlide(n) {
       showSlides(slideIndex = n);
     }
-    
+
     function showSlides(n) {
       var i;
       var slides = document.getElementsByClassName("Slides");
       var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
+      if (n > slides.length) {slideIndex = 1}
       if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
+          slides[i].style.display = "none";
       }
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex-1].style.display = "block";  
+      slides[slideIndex-1].style.display = "block";
       dots[slideIndex-1].className += " active";
     }
   </script>
-  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
@@ -140,6 +141,28 @@ body {font-family: "Lato", sans-serif}
         } // End if
       });
     });
+
+
+    // Gallery Slideshow Functions
+    var slideGIndex = 0;
+    showGSlides();
+
+    function showGSlides() {
+      var i;
+      var slides = document.getElementsByClassName("gallerySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideGIndex++;
+      if (slideGIndex > slides.length) {slideGIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideGIndex-1].style.display = "block";
+      dots[slideGIndex-1].className += " active";
+      setTimeout(showGSlides, 3000); // Change image every 3 seconds
+    }
   </script>
 
 </body>
