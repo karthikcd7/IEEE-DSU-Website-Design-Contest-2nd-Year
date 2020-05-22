@@ -1,131 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>IEEE</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <html lang="en">
+  <title>IEEE</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='gallery.css') }}">
 
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none; padding-top: none;}
 
-</style>
-<body>
 
-<!-- Navbar -->
-<div class="top">
-  <div class="bar black card">
-    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <div class="dropdown-hover hide-small right" style="margin-top: 25px;">
-      <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>
-      <div class="dropdown-content  bar-block card-4" style="right:0">
-        <a href="https://github.com/IEEE" target="_blank" class="bar-item button padding-large hide-small ">PROJECTS</a>
-        <a href="\achievements" class="bar-item button padding-large hide-small ">ACHIEVEMENTS</a>
-        <a href="\home#contact" class="bar-item button padding-large hide-small ">CONTACT US</a>
+  <style>
+    body {font-family: "Lato", sans-serif}
+    .mySlides {display: none; padding-top: none;}
 
+  </style>
+  <body>
+
+  <!-- Navbar -->
+  <div class="top">
+    <div class="bar black card">
+      <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <div class="dropdown-hover hide-small right" style="margin-top: 25px;">
+        <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content  bar-block card-4" style="right:0">
+          <a href="https://github.com/IEEE" target="_blank" class="bar-item button padding-large hide-small ">PROJECTS</a>
+          <a href="/home#achievements" class="bar-item button padding-large hide-small ">ACHIEVEMENTS</a>
+          <a href="/home#contact" class="bar-item button padding-large hide-small ">CONTACT US</a>
+
+        </div>
       </div>
+      <a href="/execom" class="bar-item button padding-large hide-small right" style="margin-top:25px">EXE COM</a>
+      <a href="/home#gallery" class="bar-item button padding-large hide-small right" style="margin-top:25px">GALLERY</a>
+      <a href="/home#events" class="bar-item button padding-large hide-small right" style="margin-top:25px">EVENTS</a>
+      <a href="/home" class="bar-item button padding-large right " style="margin-top:25px">HOME</a>
+      <a href="https://www.ieee.org/" target="_blank" class="bar-item button padding-large red hide-small right" style="margin-top:25px" ><b>JOIN  IEEE!</b></a>
+      <a class="padding-left" href="/home"> <img src="/static/logo.jpg" style="height: 90px;"> </a>
+      <a href="javascript:void(0)" class="bar-item button padding-large hide-small right"><b class="fa fa-search" style="margin-top:30px"></b></a>
     </div>
-    <a href="\execom" class="bar-item button padding-large hide-small right" style="margin-top:25px">EXE COM</a>
-    <a href="\home#gallery" class="bar-item button padding-large hide-small right" style="margin-top:25px">GALLERY</a>
-    <a href="\home#events" class="bar-item button padding-large hide-small right" style="margin-top:25px">EVENTS</a>
-    <a href="\home" class="bar-item button padding-large right " style="margin-top:25px">HOME</a>
-    <a href="https://www.ieee.org/" target="_blank" class="bar-item button padding-large red hide-small right" style="margin-top:25px" ><b>JOIN  IEEE!</b></a>
-    <a class="padding-left" href="/home"> <img src="/static/logo.jpg" style="height: 90px;"> </a>
-    <a href="javascript:void(0)" class="bar-item button padding-large hide-small right"><b class="fa fa-search" style="margin-top:30px"></b></a>
   </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
-  <a href="\home#events" class="bar-item button padding-large" onclick="myFunction()">EVENTS</a>
-  <a href="\home#gallery" class="bar-item button padding-large" onclick="myFunction()">GALLERY</a>
-  <a href="https://github.com/IEEE" target="_blank" class="bar-item button padding-large" onclick="myFunction()">PROJECTS</a>
-  <a href="\achievements" class="bar-item button padding-large" onclick="myFunction()">ACHIEVEMENTS</a>
-  <a href="\execom" class="bar-item button padding-large" onclick="myFunction()">EXE COM</a>
-  <a href="\home#contact" class="bar-item button padding-large" onclick="myFunction()">CONTACT US</a>
-</div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+    <a href="/home#events" class="bar-item button padding-large" onclick="myFunction()">EVENTS</a>
+    <a href="/home#gallery" class="bar-item button padding-large" onclick="myFunction()">GALLERY</a>
+    <a href="https://github.com/IEEE" target="_blank" class="bar-item button padding-large" onclick="myFunction()">PROJECTS</a>
+    <a href="/home#achievements" class="bar-item button padding-large" onclick="myFunction()">ACHIEVEMENTS</a>
+    <a href="/execom" class="bar-item button padding-large" onclick="myFunction()">EXE COM</a>
+    <a href="/home#contact" class="bar-item button padding-large" onclick="myFunction()">CONTACT US</a>
+  </div>
 
-{% block content %}
-{% endblock %}
+  {% block content %}
+  {% endblock %}
 
-<script>
-
-  // Used to toggle the menu on small screens when clicking on the menu button
-  function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("show") == -1) {
-      x.className += " show";
-    } else {
-      x.className = x.className.replace(" show", "");
-    }
-  }
-
-  </script>
-
-
-  <!--Slides in Achievements-->
   <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+      } else {
+        x.className = x.className.replace(" show", "");
+      }
     }
 
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
+    </script>
 
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("Slides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+    <!-- Tab in events.html-->
+    <script>
+      function openStatus(evt,Name) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < 2; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < 2; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(Name).style.display = "block";
+        evt.currentTarget.className += " active";
       }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";
-      dots[slideIndex-1].className += " active";
-    }
-  </script>
+    </script>
+    <!--Scroll function-->
+    <script>
+      $(document).ready(function(){
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();      
+            var hash = this.hash;
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 400, function(){
+              window.location.hash = hash;
+            });
+          }
+        });
+      });
+    </script>
 
-  <!-- Tab in events.html-->
-  <script>
-    function openStatus(evt,Name) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < 2; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < 2; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-      }
-      document.getElementById(Name).style.display = "block";
-      evt.currentTarget.className += " active";
-    }
-  </script>
-  <script>
-    document.getElementById("defaultOpen").click();
-  </script>
+    <script>
+      document.getElementById("defaultOpen").click();
+    </script>
 
+  </body>
 
-
-</body>
-
-<!-- Footer -->
-<footer class="container padding-64 center opacity light-grey xlarge">
-  <a href="https://www.facebook.com/IEEE.org/" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
-  <a href="https://www.instagram.com/ieeeorg/?hl=en" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/company/ieee" target="_blank"><i class="fa fa-linkedin hover-opacity"></i></a>
+  <!-- Footer -->
+  <footer class="container padding-64 center opacity light-grey xlarge">
+    <a href="https://www.facebook.com/IEEE.org/" target="_blank"><i class="fa fa-facebook-official hover-opacity"></i></a>
+    <a href="https://www.instagram.com/ieeeorg/?hl=en" target="_blank"><i class="fa fa-instagram hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/company/ieee" target="_blank"><i class="fa fa-linkedin hover-opacity"></i></a>
   </footer>
+
   <footer class="container center opacity light-grey">
-      <a href="https://www.ieee.org/" target="_blank" class=" button padding-large center black large " style="margin-top:25px" >JOIN  IEEE!</a>
+    <a href="https://www.ieee.org/" target="_blank" class=" button padding-large center black large " style="margin-top:25px" >JOIN  IEEE!</a>
   </footer>
+
 </html>

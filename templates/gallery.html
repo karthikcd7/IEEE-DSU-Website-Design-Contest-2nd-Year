@@ -1,40 +1,130 @@
 {% extends "layout-for-others.html" %}
 {% block content %}
-<div class="container row-padding padding-16 center" style="margin:5cm; width: 30cm;">
-    <div class="third margin-bottom " style="width:9cm; height: 5cm; margin-right: 2cm;">
-      <img src="/static/g1.jpg" alt="AISYWC Hyderabad 2019" style="width:10cm; height: 6.5cm;" class="hover-opacity">
-      <div class="white">
-        <p><b>AISYWC Hyderabad 2019</b></p>
-      </div>
-    </div>
-    <div class="third margin-bottom center" style=" width: 330px; height: 200px;">
-      <img src="/static/g5.jpg" alt="WIECON ECE Bangalore 2019" style="width: 400px; height: 250px; margin-left: 1cm;" class="hover-opacity">
-      <div class=" white center" style="margin-left: 4cm;">
-        <p><b>WIECON ECE Bangalore 2019</b></p>
-      </div>
-    </div>
-  </div>
-  <div class=" row-padding  center" style="margin:5cm">
-    <div class="third margin-bottom center " style="width:20cm; height: 5cm; margin-right: 2cm; margin-top: -1cm;">
-      <img src="/static/g3.jpg" alt="AISYWC Hyderabad 2019" style="width: 22cm; height: 8cm; margin-left: 0.5cm;" class="hover-opacity">
-      <div class=" center white" style="margin-left: 4cm;">
-        <p><b>IEEE India Council</b></p>
-      </div>
-    </div>
-  </div>
-  <div class=" row-padding  center" style="margin:5cm; margin-bottom: 10cm;">
-    <div class="third margin-bottom center " style="width:20cm; height: 5cm; margin-right: 2cm; margin-top: -1cm;">
-      <img src="/static/g4.jpg" alt="AISYWC Hyderabad 2019" style="width: 22cm; height: 13cm; margin-left: 0.5cm; margin-top: 1cm;" class="hover-opacity">
-      <div class=" center white" style="margin-left: 4cm;">
-        <p><b>ILS Bangalore 2019</b></p>
-      </div>
-    </div>
-  </div>
 
 
-  <div class="container padding- center">
-    <button class="button black section" type="submit" ><a href="/" style="text-decoration: none;">BACK TO HOME</a></button>
-  </div>  
+<link rel="stylesheet" href="/static/main.css">
+<link rel="stylesheet" href="/static/gallery.css">
+
+<link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+<div id="video-container" style="margin-top: 90px;">
+  <video autoplay="" loop="" muted>
+    <source src="/static/FinalVideo.mp4" type="video/mp4"/>
+  </video>
+  <div class="video-overlay"></div>
+
+  <div class="video-content">
+      <div class="inner">
+        <h1>Welcome to <em>IEEE DSU</em></h1>
+        <p>Gallery</p>
+          <div class="scroll-icon">
+              <a class="scrollTo" data-scrollTo="portfolio" href="#portfolio"><img src="static/scroll-icon.png" alt=""></a>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="full-width" >
+  <div class="grid-portfolio" id="portfolio">
+    <div class="container">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item">
+          <a href="/static/g2.jpg" data-lightbox="image-1">
+          <div class="thumb">
+            <div class="hover-effect">
+              <div class="hover-content">
+                <h1>IEEE</h1>
+                <p>IEEE India Council.</p>
+              </div>
+            </div>
+            <div class="image">
+              <img src="/static/g2.jpg" style="height: 230px;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item" >
+          <a href="/static/g3.jpg" data-lightbox="image-1">
+          <div class="thumb">
+            <div class="hover-effect">
+              <div class="hover-content">
+                <h1>ILS Bangalore 2019</h1>
+                <p>International leadership WIE</p>
+              </div>
+            </div>
+            <div class="image">
+              <img src="/static/g3.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item" >
+          <a href="/static/g1.jpg" data-lightbox="image-1">
+          <div class="thumb">
+            <div class="hover-effect">
+              <div class="hover-content">
+                <h1>AISYWC </h1>
+                <p>Hyderabad 2019</p>
+              </div>
+            </div>
+            <div class="image">
+              <img src="/static/g1.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item">
+          <a href="/static/g4.jpg" data-lightbox="image-1">
+          <div class="thumb">
+            <div class="hover-effect">
+              <div class="hover-content">
+                <h1>WIECON</h1>
+                <p>WIECON ECE Bangalore 2019</p>
+              </div>
+            </div>
+            <div class="image">
+              <img src="/static/g4.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6">
+        <div class="portfolio-item" >
+          <a href="/static/g5.jpg" data-lightbox="image-1">
+          <div class="thumb">
+            <div class="hover-effect">
+              <div class="hover-content">
+                <h1>Bangalore Section </em></h1>
+                <p>BC Meet 2020</p>
+              </div>
+            </div>
+            <div class="image">
+              <img src="/static/g5.jpg" style="height: 180px;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container padding- center">
+      <button class="button white section" type="submit" ><a href="/" style="text-decoration: none;">BACK TO HOME</a></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
 
 
 
