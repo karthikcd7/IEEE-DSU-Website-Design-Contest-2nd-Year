@@ -15,9 +15,17 @@ def gallery():
 def events():
     return render_template("events.html")
 
-@app.route("/events/events1")
-def events1():
-    return render_template("template-events.html")
+@app.route("/events/events01")
+def events01():
+    return render_template("events01.html")
+
+@app.route("/events/events02")
+def events02():
+    return render_template("events02.html")
+
+@app.route("/events/events03")
+def events03():
+    return render_template("events03.html")
 
 @app.route("/execom")
 def execom():
