@@ -12,16 +12,15 @@
 
   <style>
     body {font-family: "Lato", sans-serif}
-    .mySlides {display: none; padding-top: none;}
-
   </style>
+
   <body>
 
   <!-- Navbar -->
   <div class="top">
     <div class="bar black card">
       <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <div class="dropdown-hover hide-small right" style="margin-top: 25px;">
+      <div class="dropdown-hover hide-small right" style="margin-top: 20px;">
         <button class="padding-large button" title="More">MORE <i class="fa fa-caret-down"></i></button>
         <div class="dropdown-content  bar-block card-4" style="right:0">
           <a href="https://github.com/IEEE" target="_blank" class="bar-item button padding-large hide-small ">PROJECTS</a>
@@ -30,13 +29,13 @@
 
         </div>
       </div>
-      <a href="/execom" class="bar-item button padding-large hide-small right" style="margin-top:25px">EXE COM</a>
-      <a href="/home#gallery" class="bar-item button padding-large hide-small right" style="margin-top:25px">GALLERY</a>
-      <a href="/home#events" class="bar-item button padding-large hide-small right" style="margin-top:25px">EVENTS</a>
-      <a href="/home" class="bar-item button padding-large right " style="margin-top:25px">HOME</a>
-      <a href="https://www.ieee.org/" target="_blank" class="bar-item button padding-large red hide-small right" style="margin-top:25px" ><b>JOIN  IEEE!</b></a>
+      <a href="/execom" class="bar-item button padding-large hide-small right" style="margin-top:20px">EXE COM</a>
+      <a href="/home#gallery" class="bar-item button padding-large hide-small right" style="margin-top:20px">GALLERY</a>
+      <a href="/home#events" class="bar-item button padding-large hide-small right"  style="margin-top:20px">EVENTS</a>
+      <a href="/home" class="bar-item button padding-large right " style="margin-top:20px">HOME</a>
+      <a href="https://www.ieee.org/" target="_blank" class="bar-item button padding-large red hide-small right" style="margin-top:20px" ><b>JOIN  IEEE!</b></a>
       <a class="padding-left" href="/home"> <img src="/static/logo.jpg" style="height: 90px;"> </a>
-      <a href="javascript:void(0)" class="bar-item button padding-large hide-small right"><b class="fa fa-search" style="margin-top:30px"></b></a>
+      <a href="javascript:void(0)" class="bar-item button padding-large hide-small right"><b class="fa fa-search" style="margin-top:25px"></b></a>
     </div>
   </div>
 
@@ -83,16 +82,16 @@
         evt.currentTarget.className += " active";
       }
     </script>
+    
     <!--Scroll function-->
     <script>
       $(document).ready(function(){
         $("a").on('click', function(event) {
           if (this.hash !== "") {
-            event.preventDefault();      
             var hash = this.hash;
             $('html, body').animate({
               scrollTop: $(hash).offset().top
-            }, 400, function(){
+            }, 1000, function(){
               window.location.hash = hash;
             });
           }
@@ -100,6 +99,7 @@
       });
     </script>
 
+    <!--Default open upcomming event-->
     <script>
       document.getElementById("defaultOpen").click();
     </script>
