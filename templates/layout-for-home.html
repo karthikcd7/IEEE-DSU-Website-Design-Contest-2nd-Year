@@ -9,8 +9,6 @@
 
 <style>
 body {font-family: "Lato", sans-serif}
-.mySlides {display: none; padding-top: none;}
-.gallerySlides {display: none;}
 
 </style>
 <body>
@@ -27,7 +25,7 @@ body {font-family: "Lato", sans-serif}
         <a href="\home#contact" class="bar-item button padding-large hide-small ">CONTACT US</a>
       </div>
     </div>
-    <a href="\execom" class="bar-item button padding-large hide-small right" style="margin-top:15px">EXE COM</a>
+    <a href="/home/execom" class="bar-item button padding-large hide-small right" style="margin-top:15px">EXE COM</a>
     <a href="#gallery" class="bar-item button padding-large hide-small right" style="margin-top:15px">GALLERY</a>
     <a href="#events" class="bar-item button padding-large hide-small right" style="margin-top:15px">EVENTS</a>
     <a href="#aboutus" class="bar-item button padding-large right " style="margin-top:15px">HOME</a>
@@ -73,27 +71,16 @@ body {font-family: "Lato", sans-serif}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     $(document).ready(function(){
-      // Add smooth scrolling to all links
       $("a").on('click', function(event) {
-
-        // Make sure this.hash has a value before overriding default behavior
         if (this.hash !== "") {
-          // Prevent default anchor click behavior
           event.preventDefault();
-
-          // Store hash
           var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 400, function(){
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
           });
-        } // End if
+        }
       });
     });
   </script>

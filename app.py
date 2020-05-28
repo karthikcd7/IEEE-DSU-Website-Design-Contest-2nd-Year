@@ -27,7 +27,7 @@ def events02():
 def events03():
     return render_template("events03.html")
 
-@app.route("/execom")
+@app.route("/home/execom")
 def execom():
     return render_template("execom.html")
 
