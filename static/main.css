@@ -146,7 +146,7 @@ html{
      overflow-x:hidden
 }
  h1{
-     font-size:36px
+     font-size:45px
 }
  h2{
      font-size:30px
@@ -1485,7 +1485,7 @@ img {vertical-align: middle;}
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
+    display:inline-block;
     transition: background-color 0.6s ease;
 }
 .Hdot:hover {
@@ -1683,7 +1683,7 @@ padding: 6px 12px;
     font-weight: bold;
     font-size: 16px;
     text-align: center;
-    
+
 }
 .member{
     opacity: 1;
@@ -1705,7 +1705,7 @@ padding: 6px 12px;
     border-image: fill;
     border-radius: 100%;
     border:5px;
-    
+
 }
 
 /* Popup container - can be anything you want */
@@ -1718,7 +1718,7 @@ padding: 6px 12px;
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   /* The actual popup */
   .popup .popuptext {
     visibility: hidden;
@@ -1734,7 +1734,7 @@ padding: 6px 12px;
     left:120%;
     margin-left: -80px;
   }
-  
+
   /* Popup arrow */
   .popup .popuptext::after {
     content: "";
@@ -1746,20 +1746,20 @@ padding: 6px 12px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
   }
-  
+
   /* Toggle this class - hide and show the popup */
   .popup .pop {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
-  
+
   /* Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
+    from {opacity: 0;}
     to {opacity: 1;}
   }
-  
+
   @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity:1 ;}
@@ -1777,12 +1777,11 @@ padding: 6px 12px;
 }
 .benefit:hover{
 	transition:0.5s;
-	-ms-transform: translateY(-3px); 
-    -webkit-transform: translateY-(3px); 
-    transform: translateY(-3px); 
+	-ms-transform: translateY(-3px);
+    -webkit-transform: translateY-(3px);
+    transform: translateY(-3px);
 }
 .backgroundimg {
-    padding-top: 7%;
     position: relative;
     text-align: center;
     color: white;
@@ -1794,7 +1793,17 @@ padding: 6px 12px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size:70px;
+    font-size: calc(40px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.circle-img{
+    cursor: pointer;
+    margin: 0 2px;
+    background-color: transparent;
+    border-radius: 50%;
+    display:inline-block;
+    border:3px solid;
+    transition: background-color 0.6s ease;
+
+}
