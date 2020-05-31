@@ -31,5 +31,10 @@ def events03():
 def execom():
     return render_template("execom.html")
 
+@app.route("/home/committee")
+def committee():
+    return render_template("committee.html")
+
+
 if __name__=='__main__':
 	app.run(debug=True)
