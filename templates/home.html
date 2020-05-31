@@ -1,337 +1,334 @@
 {% extends "layout-for-home.html" %}
 {% block content %}
-<html lang="en">
-  <body>
+
     
-    <!-- Page content -->
-    <div class="content" style="max-width:2000px;margin-top:10vh">
+<!-- Page content -->
+<div class="content" style="max-width:2000px;margin-top:10vh">
 
-      <!-- Automatic Slideshow Images --> <!--Images are 1200px*650px-->
-      <div class="slideshow-container" style="max-width: 1100px;">
-        <div onmouseover="HpauseSlides()" onmouseout="HresumeSlides()">
-          
-          <div class="HomeSlides display-container center">
-            <img src="/static/img/bg/bg1.jpg" style="max-width:100%">
-          </div>
-          
-          <div class="HomeSlides display-container center">
-            <img src="/static/img/bg/bg2.jpg" style="max-width:100%">
-          </div>
-          
-          <div class="HomeSlides display-container center">
-            <img src="/static/img/bg/bg3.jpg" style="max-width:100%">
-          </div>
-          
-          <div class="HomeSlides display-container center">
-            <img src="/static/img/bg/bg4.jpg" style="max-width:100%">
-          </div>
-
-          <a class="prev black" onclick="HplusSlides(-2)">&#10094;</a>
-          <a class="next black" onclick="HplusSlides(0)">&#10095;</a>
-        
-        </div>
-        
-        
-
-      </div>
-
-      <div style="text-align:center">
-        <span class="Hdot" onclick="HcurrentSlide(0)"></span>
-        <span class="Hdot" onclick="HcurrentSlide(1)"></span>
-        <span class="Hdot" onclick="HcurrentSlide(2)"></span>
-        <span class="Hdot" onclick="HcurrentSlide(3)"></span>
-      </div>
-
-
-      <!-- THE EVENTS SECTION --> <!--Images are 260px*210px-->
-      <div class="container content padding-80" style="max-width:1100px;" id="events">
-        <h1 class="wide center">EVENTS</h1>
-        <p class="opacity center"><i>IEEE bringing you the latest in Technology News</i></p>
-
-        <div class="row-padding padding-32" style="margin:0 -16px">
-
-          <div class="flip-box third margin-bottom">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img src="/static/img/events/events1.jpg">
-              </div>
-              <div class="flip-box-back" style="background-color: rgb(63, 131, 221);">
-                <h2>Website Design Contest</h2>
-                <p>23/04/2020</p>
-                <a href="/home/events/events01">
-                  <button class="button button1" type="submit"> View Detials</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-box third margin-bottom">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img src="/static/img/events/events2.jpg">
-              </div>
-              <div class="flip-box-back" style="background-color: rgb(251, 172, 25);">
-                <h2>Xtreme Coding Competition</h2>
-                <p>05/11/2019</p>
-                <a href="/home/events/events02">
-                  <button class="button button1" type="submit"> View Detials</button>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-box third margin-bottom ">
-            <div class="flip-box-inner">
-              <div class="flip-box-front">
-                <img src="/static/img/events/events3.jpg">
-              </div>
-              <div class="flip-box-back" style="background-color: rgb(79, 223, 79);">
-                <h2>Machine Learning Workshop</h2>
-                <p>15/08/2019</p>
-                <a href="/home/events/events03">
-                  <button class="button button1" type="submit"> View Detials</button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="container center">
-          <a href="/home/events">
-          <button class="button black section" type="submit">SHOW MORE</button>
-          </a>
-        </div>
-
-      </div>
-
-
-      <!--THE GALLERY SECTION-->  <!--Images are 400px*300px-->
-      <div class="black" id="gallery">
-        <div class="container content padding-80" style="max-width:1100px">
-          <h1 class="wide center padding-16">GALLERY</h1>
-
-          <div class="slideshow-container">
-            <div onmouseover="GpauseSlides()" onmouseout="GresumeSlides()">
-
-              <div class="GallerySlides fade center">
-                <div class="numbertext"></div>
-                <img src="/static/img/gallery/g1_g.jpg" style="max-width: 100%;">
-                <div class="text">AISYWC Hyderabad 2019</div>
-              </div>
-
-              <div class="GallerySlides fade center">
-                <div class="numbertext"></div>
-                <img src="/static/img/gallery/g2_g.jpg" style="max-width: 100%;">
-                <div class="text">IEEE India Council</div>
-              </div>
-
-              <div class="GallerySlides fade center">
-                <div class="numbertext"></div>
-                <img src="/static/img/gallery/g3_g.jpg" style="max-width: 100%;">
-                <div class="text">ILS Bangalore 2019</div>
-              </div>
-
-            </div>
-
-            <a class="prev black" onclick="GplusSlides(-2)">&#10094;</a>
-            <a class="next black" onclick="GplusSlides(0)">&#10095;</a>
-          
-          </div>
-          <br>
-
-          <div style="text-align:center">
-            <span class="Gdot" onclick="GcurrentSlide(0)"></span>
-            <span class="Gdot" onclick="GcurrentSlide(1)"></span>
-            <span class="Gdot" onclick="GcurrentSlide(2)"></span>
-          </div>
-        </div>
-
-        <div class="container center">
-          <a href="/home/gallery">
-            <button class="button white section" type="submit">SHOW MORE</button>
-          </a>
-        </div>
+  <!-- Automatic Slideshow Images --> <!--Images are 1200px*650px-->
+  <div class="slideshow-container" style="max-width: 1100px;">
+    <div onmouseover="HpauseSlides()" onmouseout="HresumeSlides()">
+      
+      <div class="HomeSlides display-container center">
+        <img src="/static/img/bg/bg1.jpg" style="max-width:100%">
       </div>
       
-
-      <!-- THE ABOUT US SECTION-->
-      <div class="dsuimg">
-        <div class="container content display-container center padding-80" style="max-width:1100px;" id="aboutus">
-          <h1 class="wide">ABOUT US</h1>
-          <p class="opacity"><i>We love innovation</i></p>
-          <p class="justify">
-            IEEE is the world's largest technical professional organization dedicated to advancing
-            technology for the benefit of humanity.IEEE and its members inspire a global community to innovate for a
-            better tomorrow through highly cited publications, conferences, technology standards, and professional
-            and educational activities. IEEE is the trusted “voice” for engineering, computing, and technology
-            information around the globe.
-          </p>
-        </div>
-      </div>
-
-
-      <!--IEEE Member Benifits-->
-      
-      <div class="container content padding-80" style="max-width:1000px" id="benifits">
-        <h1 class="wide center">IEEE Member Benifits</h1>
-        <p class="opacity center"><i>Join NOW!!</i></p>
-        
-        <div class="benefit">
-          <a href="http://standards.ieee.org/" target='_blank'>
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>IEEE Standards</b>
-          </a>
-        </div>	
-        <div class="benefit">
-          <a href="http://ieeexplore.ieee.org/" target='_blank'>
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>IEEE Xplore Digital Library</b>
-          </a>
-        </div>	
-                    
-        <div class="benefit">
-          <a href="http://www.ieee.org/education_careers/education/elearning_library/index.html" target='_blank'>
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>IEEE eLearning Library</b>
-          </a>
-        </div>	
-        <div class="benefit">
-          <a href="http://www.ieee.org/membership_services/membership/students/awards/index.html" target='_blank'>
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>Scholarships, Grants, and Fellowships</b>
-          </a>
-        </div>	
-        <div class="benefit">
-          <a href="http://theinstitute.ieee.org/" class="normal">
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>The Institute Newletter</b>
-          </a>
-        </div>	
-        <div class="benefit">
-          <a href="http://www.ieee.org/membership_services/membership/products/googleapps.html" target='_blank'>
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>GoogleApps@IEEE</b>
-          </a>
-        </div>	
-        <div class="benefit">
-          <a href="https://ieee-collabratec.ieee.org" target='_blank'>
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>IEEE Collabratec</b>
-          </a>
-        </div>				
-        <div class="benefit">
-          <a href="https://sight.ieee.org/">
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>IEEE SIGHT</b>
-          </a>
-        </div>	
-        <div class="benefit">
-          <a href="http://ieeetv.ieee.org/" target='_blank'>
-            <i class="fa fa-chevron-circle-right fa-fw"></i> 
-            <b>IEEE TV</b>
-          </a>
-        </div>
-        
+      <div class="HomeSlides display-container center">
+        <img src="/static/img/bg/bg2.jpg" style="max-width:100%">
       </div>
       
+      <div class="HomeSlides display-container center">
+        <img src="/static/img/bg/bg3.jpg" style="max-width:100%">
+      </div>
+      
+      <div class="HomeSlides display-container center">
+        <img src="/static/img/bg/bg4.jpg" style="max-width:100%">
+      </div>
 
-      <!-- THE ACHIEVEMENTS SECTION -->
-      <div class="black" id="achievements">
-        <div class="container content padding-80" style="max-width:1000px" >
-          <h1 class="wide center">ACHIEVEMENTS</h1>
-          <p class="opacity center"><i>Get to know about our success!</i></p>
+      <a class="prev black" onclick="HplusSlides(-2)">&#10094;</a>
+      <a class="next black" onclick="HplusSlides(0)">&#10095;</a>
+    
+    </div>
+    
+    
 
-          <div class="slideshow-container">
-            <div onmouseover="ApauseSlides()" onmouseout="AresumeSlides()">
-              
-              <div class="AchievementSlides">
-                <div class="numbertext">1 / 4</div>
-                  <div class=" center padding-32" >
-                    <div class="center-card ach-container white">
-                      <p class="font-size-vw2"><b>Received a rebate of Rs. XX,XXX.YY from IEEE Bangalore section for the year 2018.</b></p>
-                    </div>
-                  </div>
-              </div>
+  </div>
 
-              <div class="AchievementSlides">
-                <div class="numbertext">2 / 4</div>
-                  <div class=" center padding-32" >
-                    <div class="center-card ach-container white">
-                      <p class="font-size-vw2"><b>The Impact Report for an International Conference was compiled by a member from our Student branch.</b></p>
-                    </div>
-                  </div>
-              </div>
+  <div style="text-align:center">
+    <span class="Hdot" onclick="HcurrentSlide(0)"></span>
+    <span class="Hdot" onclick="HcurrentSlide(1)"></span>
+    <span class="Hdot" onclick="HcurrentSlide(2)"></span>
+    <span class="Hdot" onclick="HcurrentSlide(3)"></span>
+  </div>
 
-              <div class="AchievementSlides">
-                <div class="numbertext">3 / 4</div>
-                  <div class=" center padding-32" >
-                    <div class="center-card ach-container white">
-                      <p class="font-size-vw2"><b>2 teams from our Student branch got selected for SIGHT funding for the year 2020. </b></p>
-                    </div>
-                  </div>
-              </div>
 
-              <div class="AchievementSlides">
-                <div class="numbertext">4 / 4</div>
-                  <div class=" center padding-32" >
-                    <div class="center-card ach-container white">
-                      <p class="font-size-vw2"><b>A member from our Student branch is a part of IEEE India Council team for this year. </b></p>
-                    </div>
-                  </div>
-              </div>
-            </div>
+  <!-- THE EVENTS SECTION --> <!--Images are 260px*210px-->
+  <div class="container content padding-80" style="max-width:1100px;" id="events">
+    <h1 class="wide center">EVENTS</h1>
+    <p class="opacity center"><i>IEEE bringing you the latest in Technology News</i></p>
 
-            <a class="prev black" style="margin-top: 60px" onclick="AplusSlides(-2)">&#10094;</a>
-            <a class="next black" style="margin-top: 60px" onclick="AplusSlides(0)">&#10095;</a>
+    <div class="row-padding padding-32" style="margin:0 -16px">
 
+      <div class="flip-box third margin-bottom">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="/static/img/events/events1.jpg">
           </div>
-
-            <div style="text-align:center">
-              <span class="Adot" onclick="AcurrentSlide(0)"></span>
-              <span class="Adot" onclick="AcurrentSlide(1)"></span>
-              <span class="Adot" onclick="AcurrentSlide(2)"></span>
-              <span class="Adot" onclick="AcurrentSlide(3)"></span>
-            </div>
-        </div>
-      </div>
-
-      
-      <!-- The Contact Section -->
-
-      <div class="container content display-container center padding-80" style="max-width:1000px" id="contact" >
-        <h1 class="wide center">CONTACT</h1>
-        <p class="opacity center"><i>Fan? Drop a note!</i></p>
-        <div class="row padding-32">
-          <div class="col m6 large margin-bottom">
-            <i class="fa fa-map-marker" style="width:30px"></i> Bangalore, Karnataka, India<br>
-            <i class="fa fa-phone" style="width:30px"></i> Phone: +91 0123456789<br>
-            <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br><br>
-            <span style="margin-left: -50px"><b>Created by:</b><br></span>
-                <span style="margin-left: 50px">Ananth Desai<br></span>
-                <span style="margin-left: 50px">C D Karthik<br></span>
-          </div>
-          <div class="col m6">
-            <form action="/action_page.php" target="_blank">
-              <div class="row-padding" style="margin:0 -16px 8px -16px">
-                <div class="half">
-                  <input class="input border" type="text" placeholder="Name" required name="Name">
-                </div>
-                <div class="half">
-                  <input class="input border" type="text" placeholder="Email" required name="Email">
-                </div>
-              </div>
-              <input class="input border" type="text" placeholder="Message" required name="Message">
-              <button class="button white section right" type="submit">SEND</button>
-            </form>
+          <div class="flip-box-back" style="background-color: rgb(63, 131, 221);">
+            <h2>Website Design Contest</h2>
+            <p>23/04/2020</p>
+            <a href="/home/events/events01">
+              <button class="button button1" type="submit"> View Details</button>
+            </a>
           </div>
         </div>
       </div>
 
+      <div class="flip-box third margin-bottom">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="/static/img/events/events2.jpg">
+          </div>
+          <div class="flip-box-back" style="background-color: rgb(251, 172, 25);">
+            <h2>Xtreme Coding Competition</h2>
+            <p>05/11/2019</p>
+            <a href="/home/events/events02">
+              <button class="button button1" type="submit"> View Details</button>
+            </a>
+          </div>
+        </div>
+      </div>
 
+      <div class="flip-box third margin-bottom ">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img src="/static/img/events/events3.jpg">
+          </div>
+          <div class="flip-box-back" style="background-color: rgb(79, 223, 79);">
+            <h2>Machine Learning Workshop</h2>
+            <p>15/08/2019</p>
+            <a href="/home/events/events03">
+              <button class="button button1" type="submit"> View Details</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <div class="container center">
+      <a href="/home/events">
+      <button class="button black section" type="submit">SHOW MORE</button>
+      </a>
+    </div>
 
-  </body>
+  </div>
 
-</html>
+
+  <!--THE GALLERY SECTION-->  <!--Images are 400px*300px-->
+  <div class="black" id="gallery">
+    <div class="container content padding-80" style="max-width:1100px">
+      <h1 class="wide center padding-16">GALLERY</h1>
+
+      <div class="slideshow-container">
+        <div onmouseover="GpauseSlides()" onmouseout="GresumeSlides()">
+
+          <div class="GallerySlides fade center">
+            <div class="numbertext"></div>
+            <img src="/static/img/gallery/g1_g.jpg" style="max-width: 100%;">
+            <div class="text">AISYWC Hyderabad 2019</div>
+          </div>
+
+          <div class="GallerySlides fade center">
+            <div class="numbertext"></div>
+            <img src="/static/img/gallery/g2_g.jpg" style="max-width: 100%;">
+            <div class="text">IEEE India Council</div>
+          </div>
+
+          <div class="GallerySlides fade center">
+            <div class="numbertext"></div>
+            <img src="/static/img/gallery/g3_g.jpg" style="max-width: 100%;">
+            <div class="text">ILS Bangalore 2019</div>
+          </div>
+
+        </div>
+
+        <a class="prev black" onclick="GplusSlides(-2)">&#10094;</a>
+        <a class="next black" onclick="GplusSlides(0)">&#10095;</a>
+      
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="Gdot" onclick="GcurrentSlide(0)"></span>
+        <span class="Gdot" onclick="GcurrentSlide(1)"></span>
+        <span class="Gdot" onclick="GcurrentSlide(2)"></span>
+      </div>
+    </div>
+
+    <div class="container center">
+      <a href="/home/gallery">
+        <button class="button white section" type="submit">SHOW MORE</button>
+      </a>
+    </div>
+  </div>
+  
+
+  <!-- THE ABOUT US SECTION-->
+  <div class="dsuimg">
+    <div class="container content display-container center padding-80" style="max-width:1100px;" id="aboutus">
+      <h1 class="wide">ABOUT US</h1>
+      <p class="opacity"><i>We love innovation</i></p>
+      <p class="justify">
+        IEEE is the world's largest technical professional organization dedicated to advancing
+        technology for the benefit of humanity.IEEE and its members inspire a global community to innovate for a
+        better tomorrow through highly cited publications, conferences, technology standards, and professional
+        and educational activities. IEEE is the trusted “voice” for engineering, computing, and technology
+        information around the globe.
+      </p>
+    </div>
+  </div>
+
+
+  <!--IEEE Member Benifits-->
+  
+  <div class="container content padding-80" style="max-width:1000px" id="benifits">
+    <h1 class="wide center">IEEE Member Benifits</h1>
+    <p class="opacity center"><i>Join NOW!!</i></p>
+    
+    <div class="benefit">
+      <a href="http://standards.ieee.org/" target='_blank'>
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>IEEE Standards</b>
+      </a>
+    </div>	
+    <div class="benefit">
+      <a href="http://ieeexplore.ieee.org/" target='_blank'>
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>IEEE Xplore Digital Library</b>
+      </a>
+    </div>	
+                
+    <div class="benefit">
+      <a href="http://www.ieee.org/education_careers/education/elearning_library/index.html" target='_blank'>
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>IEEE eLearning Library</b>
+      </a>
+    </div>	
+    <div class="benefit">
+      <a href="http://www.ieee.org/membership_services/membership/students/awards/index.html" target='_blank'>
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>Scholarships, Grants, and Fellowships</b>
+      </a>
+    </div>	
+    <div class="benefit">
+      <a href="http://theinstitute.ieee.org/" class="normal">
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>The Institute Newletter</b>
+      </a>
+    </div>	
+    <div class="benefit">
+      <a href="http://www.ieee.org/membership_services/membership/products/googleapps.html" target='_blank'>
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>GoogleApps@IEEE</b>
+      </a>
+    </div>	
+    <div class="benefit">
+      <a href="https://ieee-collabratec.ieee.org" target='_blank'>
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>IEEE Collabratec</b>
+      </a>
+    </div>				
+    <div class="benefit">
+      <a href="https://sight.ieee.org/">
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>IEEE SIGHT</b>
+      </a>
+    </div>	
+    <div class="benefit">
+      <a href="http://ieeetv.ieee.org/" target='_blank'>
+        <i class="fa fa-chevron-circle-right fa-fw"></i> 
+        <b>IEEE TV</b>
+      </a>
+    </div>
+    
+  </div>
+  
+
+  <!-- THE ACHIEVEMENTS SECTION -->
+  <div class="black" id="achievements">
+    <div class="container content padding-80" style="max-width:1000px" >
+      <h1 class="wide center">ACHIEVEMENTS</h1>
+      <p class="opacity center"><i>Get to know about our success!</i></p>
+
+      <div class="slideshow-container ">
+        <div onmouseover="ApauseSlides()" onmouseout="AresumeSlides()">
+          
+          <div class="AchievementSlides">
+            <div class="numbertext">1 / 4</div>
+              <div class=" center padding-32" >
+                <div class="center-card ach-container white" style="border-radius:20px">
+                  <p class="font-size-vw2"><b>Received a rebate of Rs. XX,XXX.YY from IEEE Bangalore section for the year 2018.</b></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="AchievementSlides">
+            <div class="numbertext">2 / 4</div>
+              <div class=" center padding-32" >
+                <div class="center-card ach-container white" style="border-radius:20px">
+                  <p class="font-size-vw2"><b>The Impact Report for an International Conference was compiled by a member from our Student branch.</b></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="AchievementSlides">
+            <div class="numbertext">3 / 4</div>
+              <div class=" center padding-32" >
+                <div class="center-card ach-container white" style="border-radius:20px">
+                  <p class="font-size-vw2"><b>2 teams from our Student branch got selected for SIGHT funding for the year 2020. </b></p>
+                </div>
+              </div>
+          </div>
+
+          <div class="AchievementSlides">
+            <div class="numbertext">4 / 4</div>
+              <div class=" center padding-32" >
+                <div class="center-card ach-container white" style="border-radius:20px">
+                  <p class="font-size-vw2"><b>A member from our Student branch is a part of IEEE India Council team for this year. </b></p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <a class="prev black" style="margin-top: 60px" onclick="AplusSlides(-2)">&#10094;</a>
+        <a class="next black" style="margin-top: 60px" onclick="AplusSlides(0)">&#10095;</a>
+
+      </div>
+
+        <div style="text-align:center">
+          <span class="Adot" onclick="AcurrentSlide(0)"></span>
+          <span class="Adot" onclick="AcurrentSlide(1)"></span>
+          <span class="Adot" onclick="AcurrentSlide(2)"></span>
+          <span class="Adot" onclick="AcurrentSlide(3)"></span>
+        </div>
+    </div>
+  </div>
+
+  
+  <!-- The Contact Section -->
+
+  <div class="container content display-container center padding-80" style="max-width:1000px" id="contact" >
+    <h1 class="wide center">CONTACT</h1>
+    <p class="opacity center"><i>Fan? Drop a note! Join IEEE Now!</i></p>
+    <div class="row padding-32">
+      <div class="col m6 large margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Bangalore, Karnataka, India<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 0123456789<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br><br>
+        <span style="margin-left: -50px"><b>Created by:</b><br></span>
+            <span style="margin-left: 50px">Ananth Desai<br></span>
+            <span style="margin-left: 50px">C D Karthik<br></span>
+      </div>
+      <div class="col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="row-padding" style="margin:0 -16px 8px -16px">
+            <div class="half">
+              <input class="input border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="half">
+              <input class="input border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="input border" type="text" placeholder="Message" required name="Message">
+          <button class="button black section right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+  
 {% endblock %}
